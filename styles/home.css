@@ -1,1 +1,42 @@
-/* add home page styles here */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+body {
+    background-color: gray;
+}
+.container {
+    display: grid;
+    height: auto;
+    width: 750px;
+    border: 30px;
+    border-width: 30px;
+    border-color: hotpink;
+    background-color: honeydew;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 20px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+  }
+  .box-1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+    }
+    .box-2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .box-3 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+  }
+  
