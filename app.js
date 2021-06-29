@@ -18,18 +18,20 @@ quizButton.addEventListener('click', ()=>{
         console.log('continue the quiz');
         const name = prompt('What is your name?');
         const ans1 = prompt('Does the professor have a five foot vertical leap?');
-        const ans2 = prompt('Does the professor think a curtain is a solid wall?');
+        const ans2 = prompt('Does the professor love bacon?');
         const ans3 = prompt('Does the professor understand how zippers work?');
         const ans4 = prompt("Does the professor really want to jump into the oven every time it's on?");
         const ans5 = prompt('Does the professor realize his actions have consequences?');
         let score = 0 ;
         if (isYes(ans1)) score++;
-        if (isYes(ans2)) score++;
+        if (!(isYes(ans2))) score++;
         if (isYes(ans3)) score++;
         if (isYes(ans4)) score++;
         if (isYes(ans5)) score++;
+        alert("You're )
         console.log('final score', score);
-        results.textContent = `${name} you got ${score} right!`;
+        results.textContent = `${name} you got ${score} right! That's ${Math.floor(score/5*100)%.}`;
+
     } else {
         console.log('user canceled');
     }
