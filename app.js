@@ -1,4 +1,4 @@
-import { isYes } from '../utils.js';
+import { isYes } from './utils.js';
 const resultGood = document.getElementById('good-result');
 const resultBad = document.getElementById('bad-result');
 
