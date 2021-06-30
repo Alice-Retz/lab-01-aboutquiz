@@ -1,6 +1,12 @@
+header{
+    background-color: white;
+}
 h1 {
     font-size: 30px;
     font-weight: bold;
+}
+.answer-pic {
+  display: none;
 }
 body {
     background-color: gray;
@@ -9,9 +15,10 @@ body {
     display: grid;
     height: auto;
     width: 750px;
-    border: 30px;
-    border-width: 30px;
-    border-color: hotpink;
+    border: 5px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgb(174, 192, 174);
     background-color: honeydew;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -37,6 +44,6 @@ body {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 3;
-      grid-row-end: 4;
+      grid-row-end: 5;
   }
   
